@@ -63,5 +63,3 @@ Each screen contains one blob. The goal of each level is to **merge all blobs in
 - Plan merges carefully in later levels where more screens and obstacles appear.  
 
 ---
-
-## Project Structure
