@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 26
-  productGUID: 9c4f2ff7923444d4eb0cafc73870770d
+  productGUID: 5d998fa5da4da57409e1d96961a9d146
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -711,11 +711,11 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   activeInputHandler: 0
   windowsGamepadBackendHint: 0
-  cloudProjectId: 3e9922b6-16e7-4b33-ba19-0f3f17863aee
+  cloudProjectId: 3ee81a14-c7f9-4772-8cf9-8d059d85c094
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
   projectName: FusionFrame
-  organizationId: asdkjf13
+  organizationId: seongminroh
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   hmiLoadingImage: {fileID: 0}
