@@ -1,7 +1,7 @@
 # FusionFrame
 
 ## Overview
-**Blob Merge** is a puzzle-action game made in Unity for a game jam.  
+**Fusion Frame** is a puzzle-action game made in Unity for a game jam.  
 The twist: you don’t control one blob—you control *all* blobs at the same time with a single set of inputs.  
 
 The game starts with multiple split-screen views (Level 1 = 2 screens, Level 2 = 3 screens, etc.).  
