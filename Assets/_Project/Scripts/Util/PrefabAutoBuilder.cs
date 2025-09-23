@@ -96,13 +96,22 @@ public static class PrefabAutoBuilder
         return mat;
     }
 
+    // Replace your existing CreateBlob method with this one:
     static string CreateBlob(string path)
     {
+        // Skip if already exists (so you don't overwrite a customized prefab)
+        if (AssetDatabase.LoadAssetAtPath<GameObject>(path) != null)
+        {
+            Debug.Log($"Skipped: {path} already exists.");
+            return path;
+        }
+
         var go = new GameObject("Blob");
 
-        // Visual
+        // Visual (no sprite assigned here to avoid Texture->Sprite issues)
         var sr = go.AddComponent<SpriteRenderer>();
-        sr.sprite = EditorGUIUtility.IconContent("d_SceneViewFX").image as Sprite; // placeholder tiny sprite
+        // NOTE: With no sprite assigned, this won't render until you drop in a sprite later.
+        // The color will apply once you assign a sprite.
         sr.color = new Color(0.2f, 0.9f, 1f, 1f);
 
         // Physics
@@ -132,6 +141,7 @@ public static class PrefabAutoBuilder
         Object.DestroyImmediate(go);
         return path;
     }
+
 
     static string CreateWall(string path, PhysicsMaterial2D mat)
     {
