@@ -53,7 +53,7 @@ public class LevelButton : MonoBehaviour
             { 
                 PlayerPrefs.SetInt("PlayerMaxLevel", PlayerPrefs.GetInt("CurrentLevel"));
             }
-            SceneManager.LoadScene("RankingScene");//fixit
+            SceneManager.LoadScene("Level"+gameObject.name);//fixit
         }
     }
 }
