@@ -124,7 +124,27 @@ public class GameManager : MonoBehaviour
         }
 
         // Wait briefly, then load next level
+        // Wait briefly, then load next level
         yield return new WaitForSeconds(1f);
+
+        // Get the current level (default to 1 if not set)
+        int currentLevel = PlayerPrefs.GetInt("CurrentLevel", 1);
+
+        // Update PlayerMaxLevel if this is the highest so far
+        if (PlayerPrefs.GetInt("PlayerMaxLevel", 1) < currentLevel)
+        {
+            PlayerPrefs.SetInt("PlayerMaxLevel", currentLevel);
+        }
+
+        // Increment current level
+        PlayerPrefs.SetInt("CurrentLevel", currentLevel + 1);
+
+        // Save PlayerPrefs just to be safe
+        PlayerPrefs.Save();
+
+        // Load your LevelScene (instead of nextLevelName)
+      //  SceneManager.LoadScene("LevelScene");
+
         if (!string.IsNullOrEmpty(nextLevelName))
         {
             SceneManager.LoadScene(nextLevelName);

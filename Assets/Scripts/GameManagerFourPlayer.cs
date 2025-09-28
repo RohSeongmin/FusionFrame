@@ -156,8 +156,22 @@ public class GameManagerFourPlayer : MonoBehaviour
             }
         }
 
-        // Wait briefly, then load next level
+        // Wait briefly
         yield return new WaitForSeconds(1f);
+
+        // ==== PlayerPrefs Level Progression ====
+        int currentLevel = PlayerPrefs.GetInt("CurrentLevel", 1);
+        PlayerPrefs.SetInt("CurrentLevel", currentLevel + 1); // Increment current level
+
+        if (PlayerPrefs.GetInt("PlayerMaxLevel", 1) < currentLevel)
+        {
+            PlayerPrefs.SetInt("PlayerMaxLevel", currentLevel); // Update max level if needed
+        }
+
+        PlayerPrefs.Save();
+        // =====================================
+
+        // Load next level as specified
         if (!string.IsNullOrEmpty(nextLevelName))
         {
             SceneManager.LoadScene(nextLevelName);
