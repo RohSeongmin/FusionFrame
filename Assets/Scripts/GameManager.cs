@@ -128,10 +128,10 @@ public class GameManager : MonoBehaviour
         yield return new WaitForSeconds(1f);
 
         // Get the current level (default to 1 if not set)
-        int currentLevel = PlayerPrefs.GetInt("CurrentLevel", 1);
+        int currentLevel = PlayerPrefs.GetInt("CurrentLevel");
 
         // Update PlayerMaxLevel if this is the highest so far
-        if (PlayerPrefs.GetInt("PlayerMaxLevel", 1) < currentLevel)
+        if (PlayerPrefs.GetInt("PlayerMaxLevel") < currentLevel)
         {
             PlayerPrefs.SetInt("PlayerMaxLevel", currentLevel);
         }

@@ -55,6 +55,7 @@ public class LevelButton : MonoBehaviour
         if (allow)
         {
             PlayerPrefs.SetInt("CurrentLevel", int.Parse(gameObject.name));
+            PlayerPrefs.Save();
             SceneManager.LoadScene("Level"+gameObject.name);
         }
     }

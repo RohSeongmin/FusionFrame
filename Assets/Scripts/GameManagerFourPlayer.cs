@@ -160,10 +160,10 @@ public class GameManagerFourPlayer : MonoBehaviour
         yield return new WaitForSeconds(1f);
 
         // ==== PlayerPrefs Level Progression ====
-        int currentLevel = PlayerPrefs.GetInt("CurrentLevel", 1);
+        int currentLevel = PlayerPrefs.GetInt("CurrentLevel");
         PlayerPrefs.SetInt("CurrentLevel", currentLevel + 1); // Increment current level
 
-        if (PlayerPrefs.GetInt("PlayerMaxLevel", 1) < currentLevel)
+        if (PlayerPrefs.GetInt("PlayerMaxLevel") < currentLevel)
         {
             PlayerPrefs.SetInt("PlayerMaxLevel", currentLevel); // Update max level if needed
         }

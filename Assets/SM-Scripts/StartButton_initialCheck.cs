@@ -28,6 +28,7 @@ public class StartButton_initialCheck : MonoBehaviour
             if (active == 0 && !PlayerPrefs.HasKey("PlayerMaxLevel"))
             {
                 PlayerPrefs.GetInt("PlayerMaxLevel", 0);
+                PlayerPrefs.Save();
             }
             SceneManager.LoadScene("LevelScene");
         }

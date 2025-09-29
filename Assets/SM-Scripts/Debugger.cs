@@ -29,6 +29,7 @@ public class Debugger : MonoBehaviour
                 if (lev < 8)
                 {
                     PlayerPrefs.SetInt("PlayerMaxLevel", lev + 1);
+                    PlayerPrefs.Save();
                     Debug.Log($"Current Max Level: {lev+1}");
                 }
             }
