@@ -11,13 +11,16 @@ using UnityEngine.UI;
 // This Code is for each Level Buttons.
 //
 //      public Image image : You should put each button's   image in INSPECTOR
+//     public Sprite clear : You should put clear button image in INSPECTOR
 //  public Sprite unlocked : You should put unlocked button image in INSPECTOR
 //    public Sprite locked : You should put locked button   image in INSPECTOR
 //      private bool allow : If current level is locked,   it would be false. 
 //                           If current level is unlocked, it would be true
 //
-// If max level is lower  than each button's name (level),         it would be locked.
-// If max level is higher than each button's name (level) or same, it would be unlocked.
+// If max level is lower          than each button's name (level),     it would be locked.
+// If max level is higher or same than each button's name (level) + 1, it would be unlocked.
+//
+// If max level is each button's name (level) - 1, it would be clear.
 // 
 // If button is clicked and allow is true, button level is saved on PlayerPrefs as "CurrentLevel",
 //                                         and scene is changed to gameScene.
@@ -25,6 +28,7 @@ using UnityEngine.UI;
 public class LevelButton : MonoBehaviour
 {
     public Image image;
+    public Sprite clear;
     public Sprite unlocked;
     public Sprite locked;
     private int max_level;
@@ -34,7 +38,11 @@ public class LevelButton : MonoBehaviour
         max_level = PlayerPrefs.GetInt("PlayerMaxLevel");
         if (allow = (max_level >= int.Parse(gameObject.name)))
         {
-            image.sprite = unlocked; 
+            image.sprite = clear; 
+        }
+        else if( allow = ( max_level + 1 == int.Parse(gameObject.name)))
+        {
+            image.sprite = unlocked;
         }
         else
         {
@@ -47,13 +55,7 @@ public class LevelButton : MonoBehaviour
         if (allow)
         {
             PlayerPrefs.SetInt("CurrentLevel", int.Parse(gameObject.name));
-            PlayerPrefs.GetInt("CurrentLevel");
-
-            if (PlayerPrefs.GetInt("PlayerMaxLevel") < PlayerPrefs.GetInt("CurrentLevel")) 
-            { 
-                PlayerPrefs.SetInt("PlayerMaxLevel", PlayerPrefs.GetInt("CurrentLevel"));
-            }
-            SceneManager.LoadScene("Level"+gameObject.name);//fixit
+            SceneManager.LoadScene("Level"+gameObject.name);
         }
     }
 }

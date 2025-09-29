@@ -618,8 +618,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81a9d00a0e6b99a49bc155dc2f553616, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneChanger: {fileID: 272680350}
   image: {fileID: 272680348}
+  clear: {fileID: 21300000, guid: b54f92b68a5768d4483230b359624c1f, type: 3}
   unlocked: {fileID: 21300000, guid: ce37ef73d1afbc441823be8f50fa00c6, type: 3}
   locked: {fileID: 21300000, guid: beecf10a950befd4ca8e37d3e96a4e68, type: 3}
 --- !u!1 &344209552
@@ -916,8 +916,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81a9d00a0e6b99a49bc155dc2f553616, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneChanger: {fileID: 361105752}
   image: {fileID: 361105750}
+  clear: {fileID: 21300000, guid: b54f92b68a5768d4483230b359624c1f, type: 3}
   unlocked: {fileID: 21300000, guid: ce37ef73d1afbc441823be8f50fa00c6, type: 3}
   locked: {fileID: 21300000, guid: beecf10a950befd4ca8e37d3e96a4e68, type: 3}
 --- !u!1 &494489566
@@ -1080,8 +1080,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81a9d00a0e6b99a49bc155dc2f553616, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneChanger: {fileID: 494489571}
   image: {fileID: 494489569}
+  clear: {fileID: 21300000, guid: b54f92b68a5768d4483230b359624c1f, type: 3}
   unlocked: {fileID: 21300000, guid: ce37ef73d1afbc441823be8f50fa00c6, type: 3}
   locked: {fileID: 21300000, guid: beecf10a950befd4ca8e37d3e96a4e68, type: 3}
 --- !u!1 &544465867
@@ -1643,8 +1643,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81a9d00a0e6b99a49bc155dc2f553616, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneChanger: {fileID: 906893417}
   image: {fileID: 906893415}
+  clear: {fileID: 21300000, guid: b54f92b68a5768d4483230b359624c1f, type: 3}
   unlocked: {fileID: 21300000, guid: ce37ef73d1afbc441823be8f50fa00c6, type: 3}
   locked: {fileID: 21300000, guid: beecf10a950befd4ca8e37d3e96a4e68, type: 3}
 --- !u!1 &940578078
@@ -1941,8 +1941,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81a9d00a0e6b99a49bc155dc2f553616, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneChanger: {fileID: 1289844467}
   image: {fileID: 1289844465}
+  clear: {fileID: 21300000, guid: b54f92b68a5768d4483230b359624c1f, type: 3}
   unlocked: {fileID: 21300000, guid: ce37ef73d1afbc441823be8f50fa00c6, type: 3}
   locked: {fileID: 21300000, guid: beecf10a950befd4ca8e37d3e96a4e68, type: 3}
 --- !u!1 &1402305256
@@ -2105,8 +2105,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81a9d00a0e6b99a49bc155dc2f553616, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneChanger: {fileID: 1402305261}
   image: {fileID: 1402305259}
+  clear: {fileID: 21300000, guid: b54f92b68a5768d4483230b359624c1f, type: 3}
   unlocked: {fileID: 21300000, guid: ce37ef73d1afbc441823be8f50fa00c6, type: 3}
   locked: {fileID: 21300000, guid: beecf10a950befd4ca8e37d3e96a4e68, type: 3}
 --- !u!1 &1481219863
@@ -2269,8 +2269,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81a9d00a0e6b99a49bc155dc2f553616, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneChanger: {fileID: 1481219868}
   image: {fileID: 1481219866}
+  clear: {fileID: 21300000, guid: b54f92b68a5768d4483230b359624c1f, type: 3}
   unlocked: {fileID: 21300000, guid: ce37ef73d1afbc441823be8f50fa00c6, type: 3}
   locked: {fileID: 21300000, guid: beecf10a950befd4ca8e37d3e96a4e68, type: 3}
 --- !u!1 &1499392766
@@ -2433,8 +2433,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81a9d00a0e6b99a49bc155dc2f553616, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneChanger: {fileID: 1499392771}
   image: {fileID: 1499392769}
+  clear: {fileID: 21300000, guid: b54f92b68a5768d4483230b359624c1f, type: 3}
   unlocked: {fileID: 21300000, guid: ce37ef73d1afbc441823be8f50fa00c6, type: 3}
   locked: {fileID: 21300000, guid: beecf10a950befd4ca8e37d3e96a4e68, type: 3}
 --- !u!1 &1508980995
